@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donuts-Factory</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="d-inline-block align-text-center"
+            src="Photo/donut1-removebg-preview.png"
+            alt="Logo-AbdelRahman"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-5" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-5" href="#">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-5" href="#">Location</a>
+            </li>
+            <li class="drop-down nav-item dropdown fs-5">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tel:+962778997053"
+                    ><i class="fa-solid fa-phone"></i> Phone</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="mailto:abdelRahmanalwabarneh@gmail.com"
+                    ><i class="fa-solid fa-envelope-open-text"></i> Email</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="d-flex min-vh-100"
+      lc-helper="background"
+      style="
+        background: url(Photo/142.jpg) center / cover no-repeat;
+        background-color: #444;
+        background-blend-mode: overlay;
+      "
+    >
+      <div
+        class="align-self-center text-center text-light col-md-8 offset-md-2"
+      >
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <h1 class="display-1 fw-bolder">Donuts Factory welcomes you</h1>
+          </div>
+        </div>
+
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="hero1 lead">
+              We are honored to serve you 24 hours a week
+            </p>
+
+            <p class="hero1 lead">See more products</p>
+          </div>
+        </div>
+
+        <div class="lc-block">
+          <svg
+            onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });"
+            width="4em"
+            height="4em"
+            viewBox="0 0 16 16"
+            class="text-light"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            lc-helper="svg-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu" class="container py-4">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="lc-block text-center">
+            <div>
+              <h2 class="">Our full menu</h2>
+              The customer is very important to us, so you will be served in the
+              best way.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Items -->
+      <div class="row row-cols-1 row-cols-lg-2 g-4 g-xxl-5">
+        <style>
+          .border_restaurant {
+            border-bottom: dashed var(--bs-body-color);
+          }
+        </style>
+        <div class="col">
+          <div class="d-grid d-sm-flex gap-3 gap-xl-4">
+            <div class="d-flex lc-block d-sm-block flex-shrink-0 col-sm-3">
+              <img
+                class="rounded shadow w-100 food_images img-fluid"
+                src="Photo/24w.jpg"
+                sizes="(max-width: 1080px) 100vw, 1080px"
+                alt="Photo by Farhad Ibrahimzade"
+                width="96"
+                height="96"
+              />
+            </div>
+            <div class="lc-block w-100">
+              <div class="d-flex gap-2 align-items-baseline">
+                <div>
+                  <h3 class="h5 fw-bold">Donut</h3>
+                </div>
+                <div class="flex-grow-1 border_restaurant opacity-25"></div>
+                <div>
+                  <strong class="h5">$10</strong>
+                </div>
+              </div>
+              <div class="lc-block opacity-50">
+                Nutella donut with pistachio is delicious.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-grid d-sm-flex gap-3 gap-xl-4">
+            <div class="d-flex d-sm-block flex-shrink-0 col-sm-3">
+              <img
+                class="rounded shadow w-100 img-fluid"
+                src="Photo/paper-cup-filled-black-coffee-600nw-1801429321.webp"
+                sizes="(max-width: 1080px) 100vw, 1080px"
+                srcset=""
+                alt="Photo by Miha Rekar"
+                width="96"
+                height="96"
+              />
+            </div>
+            <div class="lc-block w-100">
+              <div class="d-flex gap-2 align-items-baseline">
+                <div>
+                  <h3 class="h5 fw-bold">Coffee</h3>
+                </div>
+                <div class="flex-grow-1 border_restaurant opacity-25"></div>
+                <div>
+                  <strong class="h5">$15</strong>
+                </div>
+              </div>
+              <div class="lc-block opacity-50">
+                Luxurious hot coffee of the finest types and most delicious
+                flavours.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-grid d-sm-flex gap-3 gap-xl-4">
+            <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
+              <img
+                class="rounded shadow w-100 img-fluid"
+                src="Photo/IMG_2132.webp"
+                sizes="(max-width: 1080px) 100vw, 1080px"
+                srcset=""
+                alt="Photo by Kenneth Mallia"
+                width="96"
+                height="96"
+              />
+            </div>
+            <div class="lc-block w-100">
+              <div class="d-flex gap-2 align-items-baseline">
+                <div>
+                  <h3 class="h5 fw-bold">Bakery</h3>
+                </div>
+                <div class="flex-grow-1 border_restaurant opacity-25"></div>
+                <div>
+                  <strong class="h5">$14</strong>
+                </div>
+              </div>
+              <div class="lc-block opacity-50">
+                Delicious, fluffy, luxurious, healthy and beautiful baked goods
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-grid d-sm-flex gap-3 gap-xl-4">
+            <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
+              <img
+                class="rounded shadow w-100 img-fluid"
+                src="Photo/Easiest-Ice-Cream-1-1-of-1-500x500.jpg"
+                sizes="(max-width: 1080px) 100vw, 1080px"
+                srcset=""
+                alt="Photo by Farhad Ibrahimzade"
+                width="96"
+                height="96"
+              />
+            </div>
+            <div class="lc-block w-100">
+              <div class="d-flex gap-2 align-items-baseline">
+                <div>
+                  <h3 class="h5 fw-bold">Ice cream</h3>
+                </div>
+                <div class="flex-grow-1 border_restaurant opacity-25"></div>
+                <div>
+                  <strong class="h5">$8</strong>
+                </div>
+              </div>
+              <div class="lc-block opacity-50">
+                Cold ice cream, beautiful and delicious, suitable for hot
+                climates.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mmper">
+      <script
+        defer="defer"
+        src="https://unpkg.com/vanilla-counter"
+        onload="initializeCounterRANDOMID()"
+      ></script>
+      <!-- check info at https://github.com/yunisdev/vanilla-counter -->
+      <!-- lc-needs-hard-refresh -->
+
+      <script>
+        function initializeCounterRANDOMID() {
+          const options = {};
+
+          const observer = new IntersectionObserver(function (
+            entries,
+            observer
+          ) {
+            entries.forEach((entry) => {
+              console.log(entry);
+              VanillaCounter();
+            });
+          },
+          options);
+
+          observer.observe(document.querySelector(".counter-RANDOMID"));
+        }
+      </script>
+
+      <div class="container py-7">
+        <div class="row rounded text-center py-4 g-4 counter-RANDOMID">
+          <div class="col-6 col-lg-3">
+            <div class="d-flex justify-content-center mb-2">
+              <div class="bg-light p-4 rounded-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 24 24"
+                  lc-helper="svg-icon"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13,17V19H14A1,1 0 0,1 15,20H22V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H5V15.5C5,13.57 8.13,12 12,12C15.87,12 19,13.57 19,15.5V17H13M12,3A3.5,3.5 0 0,1 15.5,6.5A3.5,3.5 0 0,1 12,10A3.5,3.5 0 0,1 8.5,6.5A3.5,3.5 0 0,1 12,3Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <span
+              class="fw-bold display-5 mb-5"
+              data-vanilla-counter=""
+              data-start-at="9950"
+              data-end-at="9999"
+              data-time="1000"
+              data-delay="0"
+              data-format="{}"
+            >
+            </span>
+            <p class="lead" editable="inline">
+              <span><b>Ratings</b></span>
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="d-flex justify-content-center mb-2">
+              <div class="bg-light p-4 rounded-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 24 24"
+                  lc-helper="svg-icon"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span
+              class="fw-bold display-5 mb-5"
+              data-vanilla-counter=""
+              data-start-at="9329"
+              data-end-at="9829"
+              data-time="1000"
+              data-delay="60"
+              data-format="{}"
+            >
+            </span>
+            <p class="lead" editable="inline"><b>Customers</b> Satisfied</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="d-flex justify-content-center mb-2">
+              <div class="bg-light p-4 rounded-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 24 24"
+                  lc-helper="svg-icon"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13,17V19H14A1,1 0 0,1 15,20H22V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H5V15.5C5,13.57 8.13,12 12,12C15.87,12 19,13.57 19,15.5V17H13M12,3A3.5,3.5 0 0,1 15.5,6.5A3.5,3.5 0 0,1 12,10A3.5,3.5 0 0,1 8.5,6.5A3.5,3.5 0 0,1 12,3Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span
+              class="fw-bold display-5 mb-5"
+              data-vanilla-counter=""
+              data-start-at="0"
+              data-end-at="250"
+              data-time="1000"
+              data-delay="60"
+              data-format="{}"
+            >
+            </span>
+            <p class="lead" editable="inline">
+              <b>Employees</b> in our branches
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="d-flex justify-content-center mb-2">
+              <div class="bg-light p-4 rounded-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 24 24"
+                  lc-helper="svg-icon"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span
+              class="fw-bold display-5 mb-5"
+              data-vanilla-counter=""
+              data-start-at="0"
+              data-end-at="34"
+              data-time="1000"
+              data-delay="0"
+              data-format="{}"
+            >
+            </span>
+            <p class="lead" editable="inline"><b>Branches</b> In JO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="">
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <div class="lc-block mb-3">
+              <a
+                class="navbar-brand"
+                href="https://library.livecanvas.com/sections/"
+              >
+                <img
+                  class="img-fluid me-1"
+                  src="Photo/24w.jpg"
+                  alt="my brand"
+                  width="48px"
+                  height="48px"
+                  lc-helper="image"
+                />
+              </a>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p class="text-muted">
+                  © All rights reserved to Donuts Factory 2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col offset-md-2 mb-3">
+            <div class="lc-block mb-4">
+              <div editable="rich">
+                <h4>Get Started</h4>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <style>
+                .footer-links-list ul {
+                  padding-left: 0;
+                }
+                .footer-links-list ul li {
+                  margin-bottom: 15px;
+                  list-style-type: none;
+                  padding-left: 0;
+                }
+                .footer-links-list a {
+                  text-decoration: none;
+                  color: var(--bs-body-color);
+                }
+              </style>
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">One Item</a></li>
+                  <li><a href="#">Second Item</a></li>
+                  <li><a href="#">Third Item</a></li>
+                  <li><a href="#">Fourth Item</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <div class="col mb-3">
+            <div class="lc-block mb-4">
+              <div editable="rich">
+                <h4>About us</h4>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">Story</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <div class="col mb-3">
+            <div class="lc-block mb-4">
+              <div editable="rich">
+                <h4>Menu</h4>
+              </div>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">Donut</a></li>
+                  <li><a href="#">Coffee</a></li>
+                  <li><a href="#">Bakery</a></li>
+                  <li><a href="#">Ice cream</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="Java-Script/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
