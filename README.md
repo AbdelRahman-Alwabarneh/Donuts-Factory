@@ -1,6 +1,6 @@
 # Donuts Factory
 
-Welcome to Donuts Factory, your one-stop shop for delicious donuts, coffee, baked goods, and ice cream! Located in 
+Welcome to Donuts Factory, your one-stop shop for delicious donuts, coffee, baked goods, and ice cream! Located in
 New Zarqa / Al-Batrawi, our cozy store offers a wide range of treats to satisfy your cravings.
 
 ## Our Products
@@ -12,13 +12,13 @@ New Zarqa / Al-Batrawi, our cozy store offers a wide range of treats to satisfy 
 
 ## How to Order
 
-Visit us at 
+Visit us at
 New Zarqa / Al-Batrawi to enjoy our treats in person, or place an order for pickup by calling [phone number]. For added convenience, you can also order through our website or delivery apps.
 
 ## Contact Us
 
-- **Address:** 
-New Zarqa / Al-Batrawi
+- **Address:**
+  New Zarqa / Al-Batrawi
 - **Phone:** [077890000]
-- **Website:** [website]
+- **Website:** [https://abdelrahman-alwabarneh.github.io/Donuts-Factory/]
 - **Email:** [DonutsFactory@gmail.com]
