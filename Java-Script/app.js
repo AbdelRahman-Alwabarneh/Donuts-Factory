@@ -1,19 +1,24 @@
 let fullName = prompt("Enter your name");
 
-let gender = prompt("Enter your gender (male or female)");
-gender = gender.toLowerCase();
+let gender = prompt("Enter your gender (male or female)").toLowerCase();
+
+while (gender !== "male" && gender !== "female") {
+  gender = prompt("Enter your gender (male or female)");
+}
 
 if (gender === "male") {
   alert("Welcome Mr " + fullName);
 } else if (gender === "female") {
   alert("Welcome Ms " + fullName);
-} else {
-  alert("Welcome " + fullName);
 }
+
 let order = prompt(
   "What would you like to order \n(You can order one type) \nDonut , Coffee , Ice cream , Bakery"
-);
-order = order.toLowerCase();
+).toLowerCase();
+let ordername = prompt(
+  "Chocolate donut , Latte coffee , Chocolate ice cream , Chocolate cakes"
+).toLowerCase();
+
 if (
   order === "donut" ||
   order === "coffee" ||
@@ -25,4 +30,9 @@ if (
 } else {
   alert("Your order is not available");
   let = console.log("Welcome " + fullName + " Your order is not available");
+}
+const orders = [fullName, gender, order, ordername];
+
+for (let i = 0; i <= orders.length; i++) {
+  console.log(orders[i]);
 }
