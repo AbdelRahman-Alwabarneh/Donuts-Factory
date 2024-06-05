@@ -103,7 +103,7 @@
 //     alert("The number equals : NINE ");
 //     break;
 //   default:
-    // alert("PLEASE TRY AGAIN");
+// alert("PLEASE TRY AGAIN");
 // }
 
 let nam1e = prompt("Enter your name");
@@ -118,4 +118,4 @@ function your_information() {
   return inform2ation;
 }
 
-alert("your information:" + your_information(nam1e, age, gender));
+alert("your information:" + your_information());

@@ -2,15 +2,18 @@ let fullName = prompt("Enter your name");
 
 let gender = prompt("Enter your gender (male or female)").toLowerCase();
 
-while (gender !== "male" && gender !== "female") {
-  gender = prompt("Enter your gender (male or female)");
+function gender (){
+  while (gender !== "male" && gender !== "female") {
+    gender = prompt("Enter your gender (male or female)");
+  }
+  if (gender === "male") {
+    alert("Welcome Mr " + fullName);
+  } else if (gender === "female") {
+    alert("Welcome Ms " + fullName);
+  }
 }
+gender ();
 
-if (gender === "male") {
-  alert("Welcome Mr " + fullName);
-} else if (gender === "female") {
-  alert("Welcome Ms " + fullName);
-}
 
 let order = prompt(
   "What would you like to order \n(You can order one type) \nDonut , Coffee , Ice cream , Bakery"
