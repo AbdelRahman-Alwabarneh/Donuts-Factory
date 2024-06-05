@@ -81,7 +81,7 @@
 //   case 2:
 //     alert("The number equals : TWO ");
 //     break;
-//   case 3:
+//   case 3:r
 //     alert("The number equals : THREE ");
 //     break;
 //   case 4:
@@ -103,5 +103,19 @@
 //     alert("The number equals : NINE ");
 //     break;
 //   default:
-//     alert("PLEASE TRY AGAIN");
+    // alert("PLEASE TRY AGAIN");
 // }
+
+let nam1e = prompt("Enter your name");
+let age = prompt("Enter your age");
+let gender = prompt("Are you male or female?");
+while (gender !== "male" && gender !== "female") {
+  gender = prompt("Are you male or female?");
+}
+
+function your_information() {
+  let inform2ation = "\n" + nam1e + "\n" + age + "\n" + gender;
+  return inform2ation;
+}
+
+alert("your information:" + your_information(nam1e, age, gender));
