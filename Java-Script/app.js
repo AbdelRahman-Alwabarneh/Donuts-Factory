@@ -2,7 +2,7 @@ let fullName = prompt("Enter your name");
 
 let gender = prompt("Enter your gender (male or female)").toLowerCase();
 
-function gender (){
+function gender1() {
   while (gender !== "male" && gender !== "female") {
     gender = prompt("Enter your gender (male or female)");
   }
@@ -12,8 +12,7 @@ function gender (){
     alert("Welcome Ms " + fullName);
   }
 }
-gender ();
-
+gender1();
 
 let order = prompt(
   "What would you like to order \n(You can order one type) \nDonut , Coffee , Ice cream , Bakery"
@@ -39,3 +38,13 @@ const orders = [fullName, gender, order, ordername];
 for (let i = 0; i <= orders.length; i++) {
   console.log(orders[i]);
 }
+
+let cont = document.getElementById("orders");
+let parag = document.createElement("p");
+let orderlist = document.createElement("ol");
+parag.innerText = fullName;
+let li1 = orderlist.createElement("li");
+li1.innerText = gender;
+
+cont.appendChild(parag);
+orderlist.appendChild(li1);
