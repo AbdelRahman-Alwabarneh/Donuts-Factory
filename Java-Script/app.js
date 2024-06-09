@@ -38,13 +38,31 @@ const orders = [fullName, gender, order, ordername];
 for (let i = 0; i <= orders.length; i++) {
   console.log(orders[i]);
 }
-
+let paragHero = document.getElementById("hero1");
 let cont = document.getElementById("orders");
 let parag = document.createElement("p");
 let orderlist = document.createElement("ol");
-parag.innerText = fullName;
-let li1 = orderlist.createElement("li");
-li1.innerText = gender;
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
 
+paragHero.innerText = "We are honored to serve you 24 hours a week";
+paragHero.style.fontSize = "25px";
+paragHero.style.fontWeight = "bold";
+parag.innerText = fullName;
+
+li1.innerText = "Gender: " + gender;
+li2.innerText = "Order: " + order;
+li3.innerText = "Order Name: " + ordername;
+cont.style.textAlign = "center";
+cont.style.paddingTop = "30px";
+cont.style.fontWeight = "500";
+cont.style.color = "black";
+cont.style.fontSize = "25px";
+orderlist.style.display = "inline-block";
+orderlist.style.textAlign = "left";
 cont.appendChild(parag);
+cont.appendChild(orderlist);
 orderlist.appendChild(li1);
+orderlist.appendChild(li2);
+orderlist.appendChild(li3);
